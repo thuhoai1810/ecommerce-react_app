@@ -1,32 +1,41 @@
 import React  from "react";
 import  styles from './Header.module.scss'
+import {nanoid} from "@reduxjs/toolkit";
 const Header = () =>{
-    const asvv = "/"
+    const test = "/";
     const language = {
-        image:{},
-        country: ''
+        id: nanoid(),
+        image: '',
+        country: 'English',
     }
  return (
      <div className={styles.container}>
-      <div className={styles.headerIntroduce}>
-          <i className="fa-solid fa-truck-fast"></i>
-          <text className={styles.headerText}>
-           FREE SHIPPING NATIONWIDE FOR ORDER FROM 50$
-          </text>
-      </div>
-         <div className={styles.headerSupport}>
-             <a href= "/">Help and FAQs</a>
-         </div>
-         <div className={styles.headerLanguage}>
-             <img src={asvv} alt = 'country'/>
-             <text className={styles.language}>{language.country}</text>
-             <i className="fa-solid fa-angle-down"></i>
-             <div className={styles.headerDropdownContent}>
-                 <a href="#">English</a>
-                 <br/>
-                 <a href="#">Vietnamese</a>
-             </div>
-         </div>
+          <div className={styles.headerIntroduce}>
+              <div className={styles.headerText}>
+                  <i className="fa-solid fa-truck-fast"></i>
+                  <text >
+                      FREE SHIPPING NATIONWIDE FOR ORDER FROM 50$
+                  </text>
+              </div>
+              <div className={styles.headerSupport}>
+                  <div className={styles.headerTextSupport}>
+                      <a href= "/">Help and FAQs</a>
+                  </div>
+                  <div className={styles.headerLanguage}>
+                      <div className={styles.countryImg}>
+                          <img src={language.image} alt = ''/>
+                      </div>
+                      <div className={styles.headerDropdownContent}>
+                          <form action='/'>
+                              <select name={language.country} id={language.id}>
+                                  <option value= {language.country}> {language.country} </option>
+                              </select>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
      </div>
  )
 }

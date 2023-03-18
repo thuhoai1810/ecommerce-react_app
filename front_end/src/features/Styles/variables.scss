@@ -27,3 +27,7 @@ $brand200: #c7d2fe;
 $brand100: #e0e7ff;
 $brand50: #eef2ff;
 
+//width
+$space2sides: 48px;
+$minWidthDesktop: 1280px;
+$maxWidthDesktop: calc($minWidthDesktop - 2*$space2sides);
