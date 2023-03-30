@@ -20,7 +20,7 @@ const Button: React.FC<Tprops> = ({
   hasError = false,
   btnRef,
 }) => {
-    const newStyles = hasError ? [...styles, 'error'] : styles;
+    // const newStyles = hasError ? [...styles, 'error'] : styles;
   return (
     <button className={cssStyles.btn} type={type} ref={btnRef} disabled={disabled} onClick={onClick}>
       <span>{text}</span>
