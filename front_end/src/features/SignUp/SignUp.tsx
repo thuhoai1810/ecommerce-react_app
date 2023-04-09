@@ -1,8 +1,8 @@
 import React from 'react';
-import  styles from './SignIn.module.scss';
 import ButtonSocial from "../Component/ButtonSocial/ButtonSocial";
+import  styles from './SignUp.module.scss';
 import ButtonClose from "../Component/Button/ButtonClose";
-const SignIn = () => {
+const SignUp = () => {
     return(
         <div className={styles.container}>
             <div className={styles.header}>
@@ -16,4 +16,4 @@ const SignIn = () => {
         </div>
     )
 }
-export  default  SignIn;
+export default SignUp;

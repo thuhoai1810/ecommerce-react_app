@@ -2,7 +2,7 @@ import React from 'react';
 import  cssStyles from './Button.module.scss'
 
 type TCssStyles = keyof typeof cssStyles;
-type Tprops = {
+type TProps = {
     text?: string;
     onClick?: (event: any) => void;
     styles?: TCssStyles[];
@@ -11,7 +11,7 @@ type Tprops = {
     hasError?: boolean;
     btnRef?: any;
 }
-const Button: React.FC<Tprops> = ({
+const Button: React.FC<TProps> = ({
   text,
   onClick,
   styles = [],

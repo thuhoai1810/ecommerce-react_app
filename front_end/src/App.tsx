@@ -1,12 +1,10 @@
 import React from 'react';
 import styles from'./App.module.scss';
-import SignIn from "./features/SignIn/SignIn";
+import SignUp from "./features/SignUp/SignUp";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <SignIn/>
-    </div>
+  <SignUp/>
   );
 }
 

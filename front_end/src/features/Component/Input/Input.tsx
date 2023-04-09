@@ -1,10 +1,19 @@
-import styles from "./Input.module.scss"
+import styles from './Input.module.scss'
+import React from "react";
 
-const Input = () => {
-    return(
-        <div className={styles.}>
+type TProps = {
+    type: string;
+    text: string;
+
+}
+const Input: React.FC<TProps> = ({
+      text, type
+}) => {
+    const inputItem = {}
+    return (
+        <div className={styles.input}>
             <label className={styles.inputLabel}>
-                Full name
+                {text}
             </label>
             <input/>
         </div>
