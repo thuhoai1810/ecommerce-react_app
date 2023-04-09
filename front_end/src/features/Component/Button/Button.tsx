@@ -11,11 +11,20 @@ type Tprops = {
     hasError?: boolean;
     btnRef?: any;
 }
-const Button : React.FC<Tprops> = () =>{
-    return(
-        <button className={cssStyles.btn}>
-            button
-        </button>
-    )
-}
+const Button: React.FC<Tprops> = ({
+  text,
+  onClick,
+  styles = [],
+  disabled = false,
+  type = "button",
+  hasError = false,
+  btnRef,
+}) => {
+    // const newStyles = hasError ? [...styles, 'error'] : styles;
+  return (
+    <button className={cssStyles.btn} type={type} ref={btnRef} disabled={disabled} onClick={onClick}>
+      <span>{text}</span>
+    </button>
+  );
+};
 export  default  Button;
