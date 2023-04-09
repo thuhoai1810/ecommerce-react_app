@@ -1,0 +1,33 @@
+@import'../../Styles/variables.scss';
+.container {
+ min-width: $minWidthDesktop;
+  //background-color: #4f46e5;
+}
+
+.headerIntroduce{
+  background: $neutral200;
+  color: $neutral500;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px $space2sides ;
+  .headerText{
+    text-align: center;
+    flex-grow: 1.5;
+  }
+  >text{
+    padding-left: 15px;
+  }
+  .headerSupport{
+    display: flex;
+    .headerTextSupport{
+      padding-right: 50px;
+    }
+    .headerLanguage{
+      display: flex;
+      justify-content: space-between;
+      .countryImg{
+        padding-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+//neutral
+$neutral900: #111827;
+$neutral800: #1f2937;
+$neutral700: #374151;
+$neutral600: #4b5563;
+$neutral500: #6b7280;
+$neutral400: #94a3b8 ;
+$neutral300: #cbd5e1;
+$neutral200: #e5e7eb;
+$neutral100: #f3f4f6;
+$neutral50: #f8fafc;
+
+//basic
+$black: #000000;
+$white: #ffffff;
+
+//brand color
+$brand900: #312e81;
+$brand800: #3730a3;
+$brand700: #4338ca;
+$brand600: #4f46e5;
+$brand500: #6366f1;
+$brand400: #818cf8;
+$brand300: #a5b4fc;
+$brand200: #c7d2fe;
+$brand100: #e0e7ff;
+$brand50: #eef2ff;
+
+//width
+$space2sides: 48px;
+$minWidthDesktop: 1280px;
+$maxWidthDesktop: calc($minWidthDesktop - 2*$space2sides);
